@@ -30,7 +30,7 @@ export default function CardAgendamento({ agendamento, marcarComoConcluido }) {
 
                 {agendamento.status !== "concluido" && (
                     <button
-                        onClick={() => marcarComoConcluido(id)}
+                        onClick={() => marcarComoConcluido(agendamento.id)}
                         className="w-8 h-8 flex items-center justify-center rounded-full bg-zinc-800 hover:bg-emerald-500 hover:text-white text-zinc-400 transition-colors border border-zinc-700 hover:border-emerald-500"
                         title="Marcar como Concluído"
                     >✓

@@ -5,6 +5,7 @@ import Sucesso from "./pages/client/Sucesso"
 import Dashboard from "./pages/admin/Dashboard"
 import Servicos from "./pages/admin/Servicos"
 import AdminLayout from "./components/AdminLayout"
+import AuthCliente from "./pages/client/AuthCliente"
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Landing />} />
         <Route path="/login" element={<Login />} />
         <Route path="/sucesso" element={<Sucesso />} />
+        <Route path="/auth" element={<AuthCliente />} />
 
         <Route element={<AdminLayout />}>
           <Route path="/dashboard" element={<Dashboard />} />

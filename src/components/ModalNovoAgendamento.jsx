@@ -19,13 +19,13 @@ export default function ModalNovoAgendamento({ isOpen, onClose }) {
                 {/* { Rodape com botoes de ação} */}
                 <div className="flex justify-end gap-3">
                     <button
-                        onClick={() => { setModalEstaAberto(false) }}
+                        onClick={onClose}
                         className="px-4 py-2 font-medium text-zinc-400 hover:text-white transition-colors"
                     >Cancelar
                     </button>
 
                     <button
-                        onClick={() => setModalEstaAberto(false)} // (No futuro isso vai salvar os dados em vez de só fechar)
+                        onClick={onClose} // (No futuro isso vai salvar os dados em vez de só fechar)
                         className="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-zinc-950 font-bold rounded-lg transition-colors"
                     >
                         Salvar Agendamento
